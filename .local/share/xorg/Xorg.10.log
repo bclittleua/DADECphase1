@@ -1,0 +1,1791 @@
+[    65.478] 
+X.Org X Server 1.19.2
+Release Date: 2017-03-02
+[    65.479] X Protocol Version 11, Revision 0
+[    65.479] Build Operating System: Linux 4.9.41-v7+ armv7l Raspbian
+[    65.479] Current Operating System: Linux raspberrypi 4.19.27-v7+ #1206 SMP Wed Mar 6 14:40:18 GMT 2019 armv7l
+[    65.479] Kernel command line: 8250.nr_uarts=0 bcm2708_fb.fbwidth=640 bcm2708_fb.fbheight=480 bcm2708_fb.fbswap=1 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  dwc_otg.lpm_enable=0 console=ttyS0,115200 console=tty1 root=/dev/mmcblk0p7 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait splash plymouth.ignore-serial-consoles
+[    65.479] Build Date: 18 October 2017  04:55:30PM
+[    65.479] xorg-server 2:1.19.2-1+rpt1+deb9u2 (https://www.debian.org/support) 
+[    65.479] Current version of pixman: 0.34.0
+[    65.479] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    65.479] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    65.479] (==) Log file: "/home/pi/.local/share/xorg/Xorg.10.log", Time: Wed Mar 13 18:00:40 2019
+[    65.480] (++) Using config file: "/etc/X11/xrdp/xorg.conf"
+[    65.480] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    65.482] (==) ServerLayout "X11 Server"
+[    65.482] (**) |-->Screen "Screen (xrdpdev)" (0)
+[    65.482] (**) |   |-->Monitor "Monitor"
+[    65.482] (**) |   |-->Device "Video Card (xrdpdev)"
+[    65.482] (**) |   |-->GPUDevice "Video Card (xrdpdev)"
+[    65.482] (**) |-->Input Device "xrdpMouse"
+[    65.482] (**) |-->Input Device "xrdpKeyboard"
+[    65.483] (**) Option "DontVTSwitch" "on"
+[    65.483] (**) Option "AutoAddDevices" "off"
+[    65.483] (**) Not automatically adding devices
+[    65.483] (==) Automatically enabling devices
+[    65.483] (==) Automatically adding GPU devices
+[    65.483] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    65.483] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    65.483] 	Entry deleted from font path.
+[    65.483] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins
+[    65.483] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    65.483] (II) Loader magic: 0x1fbf40
+[    65.483] (II) Module ABI versions:
+[    65.483] 	X.Org ANSI C Emulation: 0.4
+[    65.483] 	X.Org Video Driver: 23.0
+[    65.483] 	X.Org XInput driver : 24.1
+[    65.483] 	X.Org Server Extension : 10.0
+[    65.491] (II) systemd-logind: took control of session /org/freedesktop/login1/session/c2
+[    65.491] (II) no primary bus or device found
+[    65.491] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[    65.491] (II) LoadModule: "dbe"
+[    65.492] (II) Module "dbe" already built-in
+[    65.492] (II) LoadModule: "ddc"
+[    65.492] (II) Module "ddc" already built-in
+[    65.492] (II) LoadModule: "extmod"
+[    65.492] (II) Module "extmod" already built-in
+[    65.492] (II) LoadModule: "glx"
+[    65.492] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    65.496] (II) Module glx: vendor="X.Org Foundation"
+[    65.496] 	compiled for 1.19.2, module version = 1.0.0
+[    65.496] 	ABI class: X.Org Server Extension, version 10.0
+[    65.496] (II) LoadModule: "int10"
+[    65.497] (II) Loading /usr/lib/xorg/modules/libint10.so
+[    65.502] (II) Module int10: vendor="X.Org Foundation"
+[    65.502] 	compiled for 1.19.2, module version = 1.0.0
+[    65.502] 	ABI class: X.Org Video Driver, version 23.0
+[    65.502] (II) LoadModule: "record"
+[    65.503] (II) Module "record" already built-in
+[    65.503] (II) LoadModule: "vbe"
+[    65.503] (II) Loading /usr/lib/xorg/modules/libvbe.so
+[    65.506] (II) Module vbe: vendor="X.Org Foundation"
+[    65.506] 	compiled for 1.19.2, module version = 1.1.0
+[    65.506] 	ABI class: X.Org Video Driver, version 23.0
+[    65.506] (II) LoadModule: "xorgxrdp"
+[    65.507] (II) Loading /usr/lib/xorg/modules/libxorgxrdp.so
+[    65.512] (II) Module XORGXRDP: vendor="X.Org Foundation"
+[    65.512] 	compiled for 1.19.2, module version = 1.0.0
+[    65.512] 	ABI class: X.Org Video Driver, version 23.0
+[    65.512] xorgxrdpSetup:
+[    65.512] (II) LoadModule: "fb"
+[    65.512] (II) Loading /usr/lib/xorg/modules/libfb.so
+[    65.513] (II) Module fb: vendor="X.Org Foundation"
+[    65.513] 	compiled for 1.19.2, module version = 1.0.0
+[    65.513] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    65.513] (II) LoadModule: "xrdpdev"
+[    65.513] (II) Loading /usr/lib/xorg/modules/drivers/xrdpdev_drv.so
+[    65.515] (II) Module XRDPDEV: vendor="X.Org Foundation"
+[    65.516] 	compiled for 1.19.2, module version = 1.0.0
+[    65.516] 	ABI class: X.Org Video Driver, version 23.0
+[    65.516] xrdpdevSetup:
+[    65.516] (II) LoadModule: "xrdpmouse"
+[    65.516] (II) Loading /usr/lib/xorg/modules/input/xrdpmouse_drv.so
+[    65.517] (II) Module XRDPMOUSE: vendor="X.Org Foundation"
+[    65.517] 	compiled for 1.19.2, module version = 1.0.0
+[    65.517] 	Module class: X.Org XInput Driver
+[    65.517] 	ABI class: X.Org XInput driver, version 24.1
+[    65.517] rdpmousePlug:
+[    65.517] (II) LoadModule: "xrdpkeyb"
+[    65.518] (II) Loading /usr/lib/xorg/modules/input/xrdpkeyb_drv.so
+[    65.519] (II) Module XRDPKEYB: vendor="X.Org Foundation"
+[    65.519] 	compiled for 1.19.2, module version = 1.0.0
+[    65.519] 	Module class: X.Org XInput Driver
+[    65.519] 	ABI class: X.Org XInput driver, version 24.1
+[    65.519] rdpkeybPlug:
+[    65.519] rdpIdentify:
+[    65.519] (II) XRDPDEV: driver for xrdp: XRDPDEV
+[    65.519] rdpDriverFunc: op 10
+[    65.519] (WW) Falling back to old probe method for XRDPDEV
+[    65.520] rdpProbe:
+[    65.520] (II) Loading sub module "fb"
+[    65.520] (II) LoadModule: "fb"
+[    65.520] (II) Loading /usr/lib/xorg/modules/libfb.so
+[    65.520] (II) Module fb: vendor="X.Org Foundation"
+[    65.520] 	compiled for 1.19.2, module version = 1.0.0
+[    65.520] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    65.520] (II) XRDPDEV(0): using default device
+[    65.520] (II) XRDPDEV(0): using default device
+[    65.520] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    65.520] rdpPreInit:
+[    65.520] (**) XRDPDEV(0): Depth 24, (--) framebuffer bpp 32
+[    65.520] (==) XRDPDEV(0): RGB weight 888
+[    65.520] (==) XRDPDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+[    65.520] (==) XRDPDEV(0): Default visual is TrueColor
+[    65.520] (==) XRDPDEV(0): DPI set to (96, 96)
+[    65.520] (II) XRDPDEV(0): 	mode "640x480" ok
+[    65.520] (II) XRDPDEV(0): 	mode "800x600" ok
+[    65.520] (--) XRDPDEV(0): Virtual size is 800x600 (pitch 800)
+[    65.520] (**) XRDPDEV(0):  Default mode "800x600": 36.0 MHz (scaled from 0.0 MHz), 35.2 kHz, 56.2 Hz
+[    65.520] (II) XRDPDEV(0): Modeline "800x600"x0.0   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[    65.520] (==) Depth 24 pixmap format is 32 bpp
+[    65.520] rdpScreenInit: virtualX 800 virtualY 600 rgbBits 8 depth 24
+[    65.521] rdpScreenInit: pfbMemory bytes 1920000
+[    65.521] rdpScreenInit: pfbMemory 0x760f6010
+[    65.521] rdpSimdInit: assigning yuv functions
+[    65.521] rdpXvInit: depth 24
+[    65.521] (==) XRDPDEV(0): Backing store enabled
+[    65.521] rdpScreenInit: out
+[    65.521] (==) RandR enabled
+[    65.543] (II) SELinux: Disabled on system
+[    65.546] (II) AIGLX: Screen 0 is not DRI2 capable
+[    65.546] (EE) AIGLX: reverting to software rendering
+[    65.649] (II) IGLX: enabled GLX_MESA_copy_sub_buffer
+[    65.651] (II) IGLX: Loaded and initialized swrast
+[    65.651] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[    65.819] (II) Using input driver 'XRDPMOUSE' for 'xrdpMouse'
+[    65.819] (**) Option "CorePointer"
+[    65.819] (**) xrdpMouse: always reports core events
+[    65.819] rdpmousePreInit: drv 0x13457d0 info 0x14a0a60, flags 0x0
+[    65.819] (II) XINPUT: Adding extended input device "xrdpMouse" (type: Mouse, id 6)
+[    65.819] rdpmouseControl: what 0
+[    65.819] rdpmouseDeviceInit:
+[    65.819] rdpmouseCtrl:
+[    65.819] rdpRegisterInputCallback: type 1 proc 0x762dfae4
+[    65.819] (**) xrdpMouse: (accel) keeping acceleration scheme 1
+[    65.819] (**) xrdpMouse: (accel) acceleration profile 0
+[    65.819] (**) xrdpMouse: (accel) acceleration factor: 2.000
+[    65.819] (**) xrdpMouse: (accel) acceleration threshold: 4
+[    65.819] rdpmouseControl: what 1
+[    65.819] rdpmouseDeviceOn:
+[    65.819] (II) Using input driver 'XRDPKEYB' for 'xrdpKeyboard'
+[    65.819] (**) Option "CoreKeyboard"
+[    65.819] (**) xrdpKeyboard: always reports core events
+[    65.820] rdpkeybPreInit: drv 0x1346430 info 0x16277c0, flags 0x0
+[    65.820] (II) XINPUT: Adding extended input device "xrdpKeyboard" (type: Keyboard, id 7)
+[    65.820] rdpkeybControl: what 0
+[    65.820] rdpkeybDeviceInit:
+[    65.888] rdpkeybChangeKeyboardControl:
+[    65.888] rdpkeybChangeKeyboardControl: autoRepeat on
+[    65.889] rdpRegisterInputCallback: type 0 proc 0x762cc584
+[    65.889] rdpkeybControl: what 1
+[    65.889] rdpkeybDeviceOn:
+[    65.917] rdpSaveScreen:
+[    65.918] rdpDeferredRandR:
+[    65.918] rdpResizeSession: width 1024 height 768
+[    65.918]   calling RRScreenSizeSet
+[    65.918] rdpRRScreenSetSize: width 1024 height 768 mmWidth 271 mmHeight 203
+[    65.918] rdpRRGetInfo:
+[    65.918]   screen resized to 1024x768
+[    65.922]   RRScreenSizeSet ok 1
+[    65.922] rdpResizeSession: width 1920 height 1080
+[    65.922]   calling RRScreenSizeSet
+[    65.922] rdpRRScreenSetSize: width 1920 height 1080 mmWidth 508 mmHeight 286
+[    65.923] rdpRRGetInfo:
+[    65.923]   screen resized to 1920x1080
+[    65.934]   RRScreenSizeSet ok 1
+[    65.989] rdpInDeferredUpdateCallback:
+[    65.989] rdpkeybChangeKeyboardControl:
+[    65.989] rdpkeybChangeKeyboardControl: autoRepeat off
+[    66.045] rdpClientConGotConnection:
+[    66.045] rdpClientConGotConnection: g_sck_accept ok new_sck 7
+[    66.045] rdpClientConGotConnection: adding only clientCon
+[    66.055] rdpClientConProcessMsgVersion: version 0 0 0 1
+[    66.055] rdpClientConProcessScreenSizeMsg: set width 1920 height 1080 bpp 32
+[    66.055] rdpClientConProcessScreenSizeMsg: shmemid 327684 shmemptr 0x6f32d000
+[    66.055] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 1080
+[    66.066] KbdSync: toggling num lock
+[    66.067] rdpkeybChangeKeyboardControl:
+[    66.067] rdpkeybChangeKeyboardControl: autoRepeat off
+[    66.074] rdpClientConProcessMsgClientInfo:
+[    66.074]   got client info bytes 5792
+[    66.074]   jpeg support 0
+[    66.074]   offscreen support 1
+[    66.074]   offscreen size 10485760
+[    66.074]   offscreen entries 100
+[    66.074]   client can not do offscreen to offscreen blits
+[    66.074]   client can do new(color) cursor
+[    66.074]   client can not do multimon
+[    66.074] rdpRRSetRdpOutputs: numCrtcs 0
+[    66.074] rdpRRSetRdpOutputs: numOutputs 0
+[    66.075] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[    66.075] rdpkeybChangeKeyboardControl:
+[    66.075] rdpkeybChangeKeyboardControl: autoRepeat on
+[    66.078] rdpkeybChangeKeyboardControl:
+[    66.080] rdpkeybChangeKeyboardControl: autoRepeat on
+[    66.180] rdpInDeferredUpdateCallback:
+[    66.180] rdpkeybChangeKeyboardControl:
+[    66.180] rdpkeybChangeKeyboardControl: autoRepeat off
+[    66.180] rdpkeybChangeKeyboardControl:
+[    66.180] rdpkeybChangeKeyboardControl: autoRepeat off
+[    66.747] rdpRRGetPanning: 0x167e580
+[    66.824] rdpkeybChangeKeyboardControl:
+[    66.825] rdpkeybChangeKeyboardControl: autoRepeat off
+[    66.825] rdpkeybChangeKeyboardControl:
+[    66.825] rdpkeybChangeKeyboardControl: autoRepeat on
+[    66.825] rdpkeybChangeKeyboardControl:
+[    66.825] rdpkeybChangeKeyboardControl: autoRepeat off
+[    66.825] rdpkeybChangeKeyboardControl:
+[    66.825] rdpkeybChangeKeyboardControl: autoRepeat on
+[    66.879] rdpRRGetPanning: 0x167e580
+[    66.902] rdpRRGetPanning: 0x167e580
+[    66.916] rdpRRGetPanning: 0x167e580
+[    66.925] rdpInDeferredUpdateCallback:
+[    66.925] rdpkeybChangeKeyboardControl:
+[    66.925] rdpkeybChangeKeyboardControl: autoRepeat off
+[    66.925] rdpkeybChangeKeyboardControl:
+[    66.925] rdpkeybChangeKeyboardControl: autoRepeat off
+[    67.175] rdpRRGetPanning: 0x167e580
+[    67.763] rdpRRGetPanning: 0x167e580
+[    67.802] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    67.843] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    67.913] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    67.954] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.000] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.054] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.094] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.134] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.174] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.215] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.260] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.301] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.341] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.381] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.422] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.463] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.503] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[    68.734] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    68.774] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    68.814] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    68.855] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    68.895] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    68.935] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    68.975] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.015] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.056] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.096] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.136] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.176] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.216] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.257] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.297] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.337] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.378] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.418] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.458] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.498] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.539] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.579] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.619] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.660] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.700] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.740] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.780] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.820] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.860] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.900] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.940] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    69.980] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    70.020] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    70.060] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    70.101] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    70.141] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    70.181] rdpDeferredUpdateCallback: reschedule rect_id 4 rect_id_ack 3
+[    70.317] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.357] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.397] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.438] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.479] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.519] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.559] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.599] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.621] rdpRRGetPanning: 0x167e580
+[    70.639] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.679] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.719] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.759] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.800] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.840] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.880] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.920] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    70.961] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.001] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.042] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.085] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.125] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.165] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.206] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.246] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.287] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.327] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.367] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    71.407] rdpDeferredUpdateCallback: reschedule rect_id 5 rect_id_ack 4
+[    72.053] rdpDeferredUpdateCallback: reschedule rect_id 7 rect_id_ack 6
+[    72.093] rdpDeferredUpdateCallback: reschedule rect_id 7 rect_id_ack 6
+[    72.133] rdpDeferredUpdateCallback: reschedule rect_id 7 rect_id_ack 6
+[    72.173] rdpDeferredUpdateCallback: reschedule rect_id 7 rect_id_ack 6
+[    72.213] rdpDeferredUpdateCallback: reschedule rect_id 7 rect_id_ack 6
+[    72.254] rdpDeferredUpdateCallback: reschedule rect_id 7 rect_id_ack 6
+[   131.069] KbdSync: toggling num lock
+[   131.069] rdpkeybChangeKeyboardControl:
+[   131.069] rdpkeybChangeKeyboardControl: autoRepeat off
+[   131.070] rdpkeybChangeKeyboardControl:
+[   131.070] rdpkeybChangeKeyboardControl: autoRepeat off
+[   231.104] rdpRRGetPanning: 0x167e580
+[   231.275] rdpRRGetPanning: 0x167e580
+[   231.353] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.395] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.435] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.475] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.515] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.555] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.595] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.642] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.682] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.722] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.764] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.804] rdpDeferredUpdateCallback: reschedule rect_id 221 rect_id_ack 220
+[   231.895] rdpDeferredUpdateCallback: reschedule rect_id 222 rect_id_ack 221
+[   231.935] rdpDeferredUpdateCallback: reschedule rect_id 222 rect_id_ack 221
+[   231.975] rdpDeferredUpdateCallback: reschedule rect_id 222 rect_id_ack 221
+[   232.016] rdpDeferredUpdateCallback: reschedule rect_id 222 rect_id_ack 221
+[   232.056] rdpDeferredUpdateCallback: reschedule rect_id 222 rect_id_ack 221
+[   232.102] rdpDeferredUpdateCallback: reschedule rect_id 222 rect_id_ack 221
+[   232.143] rdpDeferredUpdateCallback: reschedule rect_id 222 rect_id_ack 221
+[   232.183] rdpDeferredUpdateCallback: reschedule rect_id 222 rect_id_ack 221
+[   232.227] rdpDeferredUpdateCallback: reschedule rect_id 222 rect_id_ack 221
+[   239.874] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   239.914] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   239.955] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   239.995] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   240.035] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   240.076] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   240.116] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   240.156] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   240.196] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   240.237] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   240.277] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   240.317] rdpDeferredUpdateCallback: reschedule rect_id 347 rect_id_ack 346
+[   506.506] rdpDeferredUpdateCallback: reschedule rect_id 621 rect_id_ack 620
+[   506.546] rdpDeferredUpdateCallback: reschedule rect_id 621 rect_id_ack 620
+[   506.587] rdpDeferredUpdateCallback: reschedule rect_id 621 rect_id_ack 620
+[   506.677] rdpDeferredUpdateCallback: reschedule rect_id 622 rect_id_ack 621
+[   506.950] rdpDeferredUpdateCallback: reschedule rect_id 624 rect_id_ack 623
+[   507.163] rdpDeferredUpdateCallback: reschedule rect_id 626 rect_id_ack 625
+[   507.817] rdpDeferredUpdateCallback: reschedule rect_id 632 rect_id_ack 631
+[   507.858] rdpDeferredUpdateCallback: reschedule rect_id 632 rect_id_ack 631
+[   507.898] rdpDeferredUpdateCallback: reschedule rect_id 632 rect_id_ack 631
+[   507.939] rdpDeferredUpdateCallback: reschedule rect_id 632 rect_id_ack 631
+[   508.037] rdpDeferredUpdateCallback: reschedule rect_id 633 rect_id_ack 632
+[   553.924] rdpRRGetPanning: 0x167e580
+[   554.089] rdpRRGetPanning: 0x167e580
+[   554.170] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.210] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.253] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.294] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.334] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.378] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.418] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.458] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.498] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.539] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.579] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.619] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.661] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.701] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.744] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.798] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.847] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.890] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.930] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   554.971] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   555.012] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   555.062] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   555.102] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   555.142] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   555.185] rdpDeferredUpdateCallback: reschedule rect_id 690 rect_id_ack 689
+[   555.289] rdpDeferredUpdateCallback: reschedule rect_id 691 rect_id_ack 690
+[   555.335] rdpDeferredUpdateCallback: reschedule rect_id 691 rect_id_ack 690
+[   555.375] rdpDeferredUpdateCallback: reschedule rect_id 691 rect_id_ack 690
+[   555.415] rdpDeferredUpdateCallback: reschedule rect_id 691 rect_id_ack 690
+[   555.458] rdpDeferredUpdateCallback: reschedule rect_id 691 rect_id_ack 690
+[   555.498] rdpDeferredUpdateCallback: reschedule rect_id 691 rect_id_ack 690
+[   560.208] rdpDeferredUpdateCallback: reschedule rect_id 767 rect_id_ack 766
+[   560.248] rdpDeferredUpdateCallback: reschedule rect_id 767 rect_id_ack 766
+[   560.289] rdpDeferredUpdateCallback: reschedule rect_id 767 rect_id_ack 766
+[   560.329] rdpDeferredUpdateCallback: reschedule rect_id 767 rect_id_ack 766
+[   560.369] rdpDeferredUpdateCallback: reschedule rect_id 767 rect_id_ack 766
+[   560.409] rdpDeferredUpdateCallback: reschedule rect_id 767 rect_id_ack 766
+[   560.450] rdpDeferredUpdateCallback: reschedule rect_id 767 rect_id_ack 766
+[   568.689] rdpDeferredUpdateCallback: reschedule rect_id 786 rect_id_ack 785
+[   568.729] rdpDeferredUpdateCallback: reschedule rect_id 786 rect_id_ack 785
+[   568.769] rdpDeferredUpdateCallback: reschedule rect_id 786 rect_id_ack 785
+[   568.809] rdpDeferredUpdateCallback: reschedule rect_id 786 rect_id_ack 785
+[   568.849] rdpDeferredUpdateCallback: reschedule rect_id 786 rect_id_ack 785
+[   568.889] rdpDeferredUpdateCallback: reschedule rect_id 786 rect_id_ack 785
+[   568.930] rdpDeferredUpdateCallback: reschedule rect_id 786 rect_id_ack 785
+[   570.337] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.378] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.418] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.458] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.499] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.539] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.579] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.619] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.660] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.700] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.740] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   570.780] rdpDeferredUpdateCallback: reschedule rect_id 788 rect_id_ack 787
+[   662.143] rdpRRGetPanning: 0x167e580
+[   662.292] rdpRRGetPanning: 0x167e580
+[   662.365] rdpDeferredUpdateCallback: reschedule rect_id 872 rect_id_ack 871
+[   662.406] rdpDeferredUpdateCallback: reschedule rect_id 872 rect_id_ack 871
+[   662.446] rdpDeferredUpdateCallback: reschedule rect_id 872 rect_id_ack 871
+[   662.487] rdpDeferredUpdateCallback: reschedule rect_id 872 rect_id_ack 871
+[   662.528] rdpDeferredUpdateCallback: reschedule rect_id 872 rect_id_ack 871
+[   662.576] rdpDeferredUpdateCallback: reschedule rect_id 872 rect_id_ack 871
+[   662.616] rdpDeferredUpdateCallback: reschedule rect_id 872 rect_id_ack 871
+[   662.656] rdpDeferredUpdateCallback: reschedule rect_id 872 rect_id_ack 871
+[   662.696] rdpDeferredUpdateCallback: reschedule rect_id 872 rect_id_ack 871
+[   662.736] rdpDeferredUpdateCallback: reschedule rect_id 872 rect_id_ack 871
+[   662.830] rdpDeferredUpdateCallback: reschedule rect_id 873 rect_id_ack 872
+[   662.870] rdpDeferredUpdateCallback: reschedule rect_id 873 rect_id_ack 872
+[   662.918] rdpDeferredUpdateCallback: reschedule rect_id 873 rect_id_ack 872
+[   662.959] rdpDeferredUpdateCallback: reschedule rect_id 873 rect_id_ack 872
+[   662.999] rdpDeferredUpdateCallback: reschedule rect_id 873 rect_id_ack 872
+[   663.039] rdpDeferredUpdateCallback: reschedule rect_id 873 rect_id_ack 872
+[   664.917] rdpDeferredUpdateCallback: reschedule rect_id 903 rect_id_ack 902
+[   670.214] rdpRRGetPanning: 0x167e580
+[   670.339] rdpRRGetPanning: 0x167e580
+[   670.415] rdpDeferredUpdateCallback: reschedule rect_id 929 rect_id_ack 928
+[   670.455] rdpDeferredUpdateCallback: reschedule rect_id 929 rect_id_ack 928
+[   670.495] rdpDeferredUpdateCallback: reschedule rect_id 929 rect_id_ack 928
+[   670.537] rdpDeferredUpdateCallback: reschedule rect_id 929 rect_id_ack 928
+[   670.577] rdpDeferredUpdateCallback: reschedule rect_id 929 rect_id_ack 928
+[   670.618] rdpDeferredUpdateCallback: reschedule rect_id 929 rect_id_ack 928
+[   670.658] rdpDeferredUpdateCallback: reschedule rect_id 929 rect_id_ack 928
+[   670.698] rdpDeferredUpdateCallback: reschedule rect_id 929 rect_id_ack 928
+[   670.738] rdpDeferredUpdateCallback: reschedule rect_id 929 rect_id_ack 928
+[   670.778] rdpDeferredUpdateCallback: reschedule rect_id 929 rect_id_ack 928
+[   670.864] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   670.904] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   670.945] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   670.985] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   671.025] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   671.065] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   671.105] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   671.145] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   671.185] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   671.225] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   671.265] rdpDeferredUpdateCallback: reschedule rect_id 930 rect_id_ack 929
+[   676.385] rdpDeferredUpdateCallback: reschedule rect_id 998 rect_id_ack 997
+[   700.400] rdpDeferredUpdateCallback: reschedule rect_id 1309 rect_id_ack 1308
+[   700.441] rdpDeferredUpdateCallback: reschedule rect_id 1309 rect_id_ack 1308
+[   700.481] rdpDeferredUpdateCallback: reschedule rect_id 1309 rect_id_ack 1308
+[   700.521] rdpDeferredUpdateCallback: reschedule rect_id 1309 rect_id_ack 1308
+[   700.561] rdpDeferredUpdateCallback: reschedule rect_id 1309 rect_id_ack 1308
+[   700.602] rdpDeferredUpdateCallback: reschedule rect_id 1309 rect_id_ack 1308
+[   700.642] rdpDeferredUpdateCallback: reschedule rect_id 1309 rect_id_ack 1308
+[   700.682] rdpDeferredUpdateCallback: reschedule rect_id 1309 rect_id_ack 1308
+[   700.722] rdpDeferredUpdateCallback: reschedule rect_id 1309 rect_id_ack 1308
+[   700.763] rdpDeferredUpdateCallback: reschedule rect_id 1309 rect_id_ack 1308
+[   700.916] rdpDeferredUpdateCallback: reschedule rect_id 1310 rect_id_ack 1309
+[   700.956] rdpDeferredUpdateCallback: reschedule rect_id 1310 rect_id_ack 1309
+[   700.996] rdpDeferredUpdateCallback: reschedule rect_id 1310 rect_id_ack 1309
+[   701.036] rdpDeferredUpdateCallback: reschedule rect_id 1310 rect_id_ack 1309
+[   701.076] rdpDeferredUpdateCallback: reschedule rect_id 1310 rect_id_ack 1309
+[   701.116] rdpDeferredUpdateCallback: reschedule rect_id 1310 rect_id_ack 1309
+[   701.156] rdpDeferredUpdateCallback: reschedule rect_id 1310 rect_id_ack 1309
+[   701.197] rdpDeferredUpdateCallback: reschedule rect_id 1310 rect_id_ack 1309
+[   701.237] rdpDeferredUpdateCallback: reschedule rect_id 1310 rect_id_ack 1309
+[   704.737] rdpRRGetPanning: 0x167e580
+[   704.914] rdpDeferredUpdateCallback: reschedule rect_id 1316 rect_id_ack 1315
+[   704.954] rdpDeferredUpdateCallback: reschedule rect_id 1316 rect_id_ack 1315
+[   704.994] rdpDeferredUpdateCallback: reschedule rect_id 1316 rect_id_ack 1315
+[   705.035] rdpDeferredUpdateCallback: reschedule rect_id 1316 rect_id_ack 1315
+[   705.075] rdpDeferredUpdateCallback: reschedule rect_id 1316 rect_id_ack 1315
+[  1283.183] rdpRRGetPanning: 0x167e580
+[  1283.345] rdpDeferredUpdateCallback: reschedule rect_id 1778 rect_id_ack 1777
+[  1283.385] rdpDeferredUpdateCallback: reschedule rect_id 1778 rect_id_ack 1777
+[  1283.425] rdpDeferredUpdateCallback: reschedule rect_id 1778 rect_id_ack 1777
+[  1283.466] rdpDeferredUpdateCallback: reschedule rect_id 1778 rect_id_ack 1777
+[  1283.506] rdpDeferredUpdateCallback: reschedule rect_id 1778 rect_id_ack 1777
+[  1283.546] rdpDeferredUpdateCallback: reschedule rect_id 1778 rect_id_ack 1777
+[  1318.523] rdpClientConRecv: g_sck_recv failed(returned 0)
+[  1318.523] rdpClientConDisconnect:
+[  1318.523] rdpClientConDisconnect: clientCon removed from dev list
+[  1318.523] rdpClientConRecvMsg: error
+[  1318.523] rdpClientConCheck: rdpClientConGotData failed
+[  1893.657] rdpSaveScreen:
+[  2493.657] rdpSaveScreen:
+[  3093.658] rdpSaveScreen:
+[  3693.660] rdpSaveScreen:
+[  4293.662] rdpSaveScreen:
+[  4893.663] rdpSaveScreen:
+[  5493.663] rdpSaveScreen:
+[  6093.663] rdpSaveScreen:
+[  6693.665] rdpSaveScreen:
+[  7293.666] rdpSaveScreen:
+[  7893.667] rdpSaveScreen:
+[  8493.667] rdpSaveScreen:
+[  9093.668] rdpSaveScreen:
+[  9693.669] rdpSaveScreen:
+[ 10293.669] rdpSaveScreen:
+[ 10893.670] rdpSaveScreen:
+[ 11493.671] rdpSaveScreen:
+[ 12093.672] rdpSaveScreen:
+[ 12693.673] rdpSaveScreen:
+[ 13293.673] rdpSaveScreen:
+[ 13893.675] rdpSaveScreen:
+[ 14493.676] rdpSaveScreen:
+[ 15093.678] rdpSaveScreen:
+[ 15693.678] rdpSaveScreen:
+[ 16293.679] rdpSaveScreen:
+[ 16893.681] rdpSaveScreen:
+[ 17493.682] rdpSaveScreen:
+[ 18093.682] rdpSaveScreen:
+[ 18693.684] rdpSaveScreen:
+[ 19293.685] rdpSaveScreen:
+[ 19893.686] rdpSaveScreen:
+[ 20493.687] rdpSaveScreen:
+[ 21093.688] rdpSaveScreen:
+[ 21693.689] rdpSaveScreen:
+[ 22293.691] rdpSaveScreen:
+[ 22893.693] rdpSaveScreen:
+[ 23493.693] rdpSaveScreen:
+[ 24093.694] rdpSaveScreen:
+[ 24693.695] rdpSaveScreen:
+[ 25293.695] rdpSaveScreen:
+[ 25893.695] rdpSaveScreen:
+[ 26493.696] rdpSaveScreen:
+[ 27093.698] rdpSaveScreen:
+[ 27693.699] rdpSaveScreen:
+[ 28293.700] rdpSaveScreen:
+[ 28893.701] rdpSaveScreen:
+[ 29493.703] rdpSaveScreen:
+[ 30093.704] rdpSaveScreen:
+[ 30693.704] rdpSaveScreen:
+[ 31293.705] rdpSaveScreen:
+[ 31893.706] rdpSaveScreen:
+[ 32493.707] rdpSaveScreen:
+[ 33093.708] rdpSaveScreen:
+[ 33693.710] rdpSaveScreen:
+[ 34293.711] rdpSaveScreen:
+[ 34893.711] rdpSaveScreen:
+[ 35493.712] rdpSaveScreen:
+[ 36093.714] rdpSaveScreen:
+[ 36693.715] rdpSaveScreen:
+[ 37293.716] rdpSaveScreen:
+[ 37893.717] rdpSaveScreen:
+[ 38493.718] rdpSaveScreen:
+[ 39093.719] rdpSaveScreen:
+[ 39693.720] rdpSaveScreen:
+[ 40293.720] rdpSaveScreen:
+[ 40893.721] rdpSaveScreen:
+[ 41493.722] rdpSaveScreen:
+[ 42093.722] rdpSaveScreen:
+[ 42693.722] rdpSaveScreen:
+[ 43293.723] rdpSaveScreen:
+[ 43893.724] rdpSaveScreen:
+[ 44493.724] rdpSaveScreen:
+[ 45093.725] rdpSaveScreen:
+[ 45693.726] rdpSaveScreen:
+[ 46293.727] rdpSaveScreen:
+[ 46893.728] rdpSaveScreen:
+[ 47493.728] rdpSaveScreen:
+[ 48093.730] rdpSaveScreen:
+[ 48693.731] rdpSaveScreen:
+[ 49293.731] rdpSaveScreen:
+[ 49893.734] rdpSaveScreen:
+[ 50493.735] rdpSaveScreen:
+[ 51093.736] rdpSaveScreen:
+[ 51693.736] rdpSaveScreen:
+[ 52293.738] rdpSaveScreen:
+[ 52893.739] rdpSaveScreen:
+[ 53493.740] rdpSaveScreen:
+[ 54093.741] rdpSaveScreen:
+[ 54693.743] rdpSaveScreen:
+[ 55293.744] rdpSaveScreen:
+[ 55893.744] rdpSaveScreen:
+[ 56493.744] rdpSaveScreen:
+[ 57093.746] rdpSaveScreen:
+[ 57693.747] rdpSaveScreen:
+[ 58293.747] rdpSaveScreen:
+[ 58893.749] rdpSaveScreen:
+[ 59493.750] rdpSaveScreen:
+[ 60093.751] rdpSaveScreen:
+[ 60693.752] rdpSaveScreen:
+[ 61293.752] rdpSaveScreen:
+[ 61893.755] rdpSaveScreen:
+[ 62493.756] rdpSaveScreen:
+[ 63093.756] rdpSaveScreen:
+[ 63693.756] rdpSaveScreen:
+[ 64293.757] rdpSaveScreen:
+[ 64893.758] rdpSaveScreen:
+[ 65493.759] rdpSaveScreen:
+[ 66093.760] rdpSaveScreen:
+[ 66693.761] rdpSaveScreen:
+[ 67293.762] rdpSaveScreen:
+[ 67893.762] rdpSaveScreen:
+[ 68493.762] rdpSaveScreen:
+[ 69093.764] rdpSaveScreen:
+[ 69693.766] rdpSaveScreen:
+[ 70293.766] rdpSaveScreen:
+[ 70893.768] rdpSaveScreen:
+[ 71493.769] rdpSaveScreen:
+[ 72093.770] rdpSaveScreen:
+[ 72693.771] rdpSaveScreen:
+[ 73293.772] rdpSaveScreen:
+[ 73893.774] rdpSaveScreen:
+[ 74493.775] rdpSaveScreen:
+[ 75093.775] rdpSaveScreen:
+[ 75693.777] rdpSaveScreen:
+[ 76111.489] rdpClientConGotConnection:
+[ 76111.490] rdpClientConGotConnection: g_sck_accept ok new_sck 7
+[ 76111.490] rdpClientConGotConnection: adding only clientCon
+[ 76111.498] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 76111.498] rdpClientConProcessScreenSizeMsg: set width 1920 height 1080 bpp 32
+[ 76111.498] rdpClientConProcessScreenSizeMsg: shmemid 34603016 shmemptr 0x6eb44000
+[ 76111.498] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1920 cy 1080
+[ 76111.521] rdpClientConProcessMsgClientInfo:
+[ 76111.522]   got client info bytes 5792
+[ 76111.522]   jpeg support 0
+[ 76111.522]   offscreen support 1
+[ 76111.522]   offscreen size 10485760
+[ 76111.522]   offscreen entries 100
+[ 76111.522]   client can not do offscreen to offscreen blits
+[ 76111.522]   client can do new(color) cursor
+[ 76111.522]   client can not do multimon
+[ 76111.522] rdpRRSetRdpOutputs: numCrtcs 1
+[ 76111.522] rdpRRSetRdpOutputs: numOutputs 1
+[ 76111.523] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 76111.524] rdpkeybChangeKeyboardControl:
+[ 76111.524] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 76111.527] rdpkeybChangeKeyboardControl:
+[ 76111.527] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 76111.559] rdpRRGetPanning: 0x17b56a8
+[ 76111.560] rdpRRGetPanning: 0x17b56a8
+[ 76111.560] rdpRRGetPanning: 0x17b56a8
+[ 76111.562] rdpRRGetPanning: 0x17b56a8
+[ 76111.563] rdpRRGetPanning: 0x17b56a8
+[ 76111.601] rdpRRGetPanning: 0x17b56a8
+[ 76111.601] rdpRRGetPanning: 0x17b56a8
+[ 76111.601] rdpRRGetPanning: 0x17b56a8
+[ 76111.601] rdpRRGetPanning: 0x17b56a8
+[ 76111.629] rdpInDeferredUpdateCallback:
+[ 76111.629] rdpkeybChangeKeyboardControl:
+[ 76111.629] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 76111.629] rdpkeybChangeKeyboardControl:
+[ 76111.629] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 76111.639] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76111.679] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76111.719] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76111.759] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76111.800] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76111.840] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76111.880] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76111.920] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76111.960] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76112.001] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76112.041] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76112.082] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76112.122] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76112.162] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76112.203] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76112.243] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76112.283] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76112.323] rdpDeferredUpdateCallback: reschedule rect_id 1 rect_id_ack 0
+[ 76112.690] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76112.730] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76112.770] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76112.810] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76112.850] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76112.890] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76112.930] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76112.970] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.010] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.051] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.091] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.131] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.171] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.212] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.252] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.292] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.332] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.372] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.413] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.453] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.493] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.533] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.574] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.614] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.654] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.694] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.735] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76113.775] rdpDeferredUpdateCallback: reschedule rect_id 2 rect_id_ack 1
+[ 76114.190] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.230] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.270] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.310] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.351] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.391] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.431] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.471] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.511] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.551] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.592] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.632] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.672] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.712] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.752] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.792] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.832] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76114.873] rdpDeferredUpdateCallback: reschedule rect_id 3 rect_id_ack 2
+[ 76115.472] rdpSaveScreen:
+[ 76129.196] rdpDeferredUpdateCallback: reschedule rect_id 17 rect_id_ack 16
+[ 76129.237] rdpDeferredUpdateCallback: reschedule rect_id 17 rect_id_ack 16
+[ 76129.277] rdpDeferredUpdateCallback: reschedule rect_id 17 rect_id_ack 16
+[ 76145.706] rdpDeferredUpdateCallback: reschedule rect_id 37 rect_id_ack 36
+[ 76145.746] rdpDeferredUpdateCallback: reschedule rect_id 37 rect_id_ack 36
+[ 76145.786] rdpDeferredUpdateCallback: reschedule rect_id 37 rect_id_ack 36
+[ 76145.827] rdpDeferredUpdateCallback: reschedule rect_id 37 rect_id_ack 36
+[ 76145.867] rdpDeferredUpdateCallback: reschedule rect_id 37 rect_id_ack 36
+[ 76145.907] rdpDeferredUpdateCallback: reschedule rect_id 37 rect_id_ack 36
+[ 76145.947] rdpDeferredUpdateCallback: reschedule rect_id 37 rect_id_ack 36
+[ 76145.988] rdpDeferredUpdateCallback: reschedule rect_id 37 rect_id_ack 36
+[ 76146.028] rdpDeferredUpdateCallback: reschedule rect_id 37 rect_id_ack 36
+[ 76146.068] rdpDeferredUpdateCallback: reschedule rect_id 37 rect_id_ack 36
+[ 76150.697] rdpRRGetPanning: 0x17b56a8
+[ 76150.821] rdpRRGetPanning: 0x17b56a8
+[ 76150.895] rdpDeferredUpdateCallback: reschedule rect_id 44 rect_id_ack 43
+[ 76150.935] rdpDeferredUpdateCallback: reschedule rect_id 44 rect_id_ack 43
+[ 76150.985] rdpDeferredUpdateCallback: reschedule rect_id 44 rect_id_ack 43
+[ 76151.025] rdpDeferredUpdateCallback: reschedule rect_id 44 rect_id_ack 43
+[ 76151.066] rdpDeferredUpdateCallback: reschedule rect_id 44 rect_id_ack 43
+[ 76151.111] rdpDeferredUpdateCallback: reschedule rect_id 44 rect_id_ack 43
+[ 76151.151] rdpDeferredUpdateCallback: reschedule rect_id 44 rect_id_ack 43
+[ 76151.191] rdpDeferredUpdateCallback: reschedule rect_id 44 rect_id_ack 43
+[ 76151.235] rdpDeferredUpdateCallback: reschedule rect_id 44 rect_id_ack 43
+[ 76151.275] rdpDeferredUpdateCallback: reschedule rect_id 44 rect_id_ack 43
+[ 76151.372] rdpDeferredUpdateCallback: reschedule rect_id 45 rect_id_ack 44
+[ 76151.419] rdpDeferredUpdateCallback: reschedule rect_id 45 rect_id_ack 44
+[ 76167.210] rdpDeferredUpdateCallback: reschedule rect_id 300 rect_id_ack 299
+[ 76167.250] rdpDeferredUpdateCallback: reschedule rect_id 300 rect_id_ack 299
+[ 76204.024] rdpRRGetPanning: 0x17b56a8
+[ 76204.158] rdpRRGetPanning: 0x17b56a8
+[ 76204.222] rdpDeferredUpdateCallback: reschedule rect_id 465 rect_id_ack 464
+[ 76204.262] rdpDeferredUpdateCallback: reschedule rect_id 465 rect_id_ack 464
+[ 76204.302] rdpDeferredUpdateCallback: reschedule rect_id 465 rect_id_ack 464
+[ 76204.342] rdpDeferredUpdateCallback: reschedule rect_id 465 rect_id_ack 464
+[ 76204.382] rdpDeferredUpdateCallback: reschedule rect_id 465 rect_id_ack 464
+[ 76204.422] rdpDeferredUpdateCallback: reschedule rect_id 465 rect_id_ack 464
+[ 76204.462] rdpDeferredUpdateCallback: reschedule rect_id 465 rect_id_ack 464
+[ 76204.502] rdpDeferredUpdateCallback: reschedule rect_id 465 rect_id_ack 464
+[ 76204.542] rdpDeferredUpdateCallback: reschedule rect_id 465 rect_id_ack 464
+[ 76204.582] rdpDeferredUpdateCallback: reschedule rect_id 465 rect_id_ack 464
+[ 76204.702] rdpDeferredUpdateCallback: reschedule rect_id 466 rect_id_ack 465
+[ 76204.742] rdpDeferredUpdateCallback: reschedule rect_id 466 rect_id_ack 465
+[ 76204.782] rdpDeferredUpdateCallback: reschedule rect_id 466 rect_id_ack 465
+[ 76204.822] rdpDeferredUpdateCallback: reschedule rect_id 466 rect_id_ack 465
+[ 76204.862] rdpDeferredUpdateCallback: reschedule rect_id 466 rect_id_ack 465
+[ 76204.903] rdpDeferredUpdateCallback: reschedule rect_id 466 rect_id_ack 465
+[ 76204.943] rdpDeferredUpdateCallback: reschedule rect_id 466 rect_id_ack 465
+[ 76204.983] rdpDeferredUpdateCallback: reschedule rect_id 466 rect_id_ack 465
+[ 76205.023] rdpDeferredUpdateCallback: reschedule rect_id 466 rect_id_ack 465
+[ 76205.063] rdpDeferredUpdateCallback: reschedule rect_id 466 rect_id_ack 465
+[ 76207.099] rdpDeferredUpdateCallback: reschedule rect_id 495 rect_id_ack 494
+[ 76217.959] rdpDeferredUpdateCallback: reschedule rect_id 508 rect_id_ack 507
+[ 76217.999] rdpDeferredUpdateCallback: reschedule rect_id 508 rect_id_ack 507
+[ 76218.040] rdpDeferredUpdateCallback: reschedule rect_id 508 rect_id_ack 507
+[ 76218.080] rdpDeferredUpdateCallback: reschedule rect_id 508 rect_id_ack 507
+[ 76218.120] rdpDeferredUpdateCallback: reschedule rect_id 508 rect_id_ack 507
+[ 76218.160] rdpDeferredUpdateCallback: reschedule rect_id 508 rect_id_ack 507
+[ 76218.200] rdpDeferredUpdateCallback: reschedule rect_id 508 rect_id_ack 507
+[ 76218.240] rdpDeferredUpdateCallback: reschedule rect_id 508 rect_id_ack 507
+[ 76224.206] rdpRRGetPanning: 0x17b56a8
+[ 76224.337] rdpRRGetPanning: 0x17b56a8
+[ 76224.408] rdpDeferredUpdateCallback: reschedule rect_id 516 rect_id_ack 515
+[ 76224.449] rdpDeferredUpdateCallback: reschedule rect_id 516 rect_id_ack 515
+[ 76224.489] rdpDeferredUpdateCallback: reschedule rect_id 516 rect_id_ack 515
+[ 76224.531] rdpDeferredUpdateCallback: reschedule rect_id 516 rect_id_ack 515
+[ 76224.571] rdpDeferredUpdateCallback: reschedule rect_id 516 rect_id_ack 515
+[ 76224.611] rdpDeferredUpdateCallback: reschedule rect_id 516 rect_id_ack 515
+[ 76224.651] rdpDeferredUpdateCallback: reschedule rect_id 516 rect_id_ack 515
+[ 76224.691] rdpDeferredUpdateCallback: reschedule rect_id 516 rect_id_ack 515
+[ 76224.732] rdpDeferredUpdateCallback: reschedule rect_id 516 rect_id_ack 515
+[ 76224.772] rdpDeferredUpdateCallback: reschedule rect_id 516 rect_id_ack 515
+[ 76224.860] rdpDeferredUpdateCallback: reschedule rect_id 517 rect_id_ack 516
+[ 76224.900] rdpDeferredUpdateCallback: reschedule rect_id 517 rect_id_ack 516
+[ 76224.940] rdpDeferredUpdateCallback: reschedule rect_id 517 rect_id_ack 516
+[ 76224.980] rdpDeferredUpdateCallback: reschedule rect_id 517 rect_id_ack 516
+[ 76225.020] rdpDeferredUpdateCallback: reschedule rect_id 517 rect_id_ack 516
+[ 76225.060] rdpDeferredUpdateCallback: reschedule rect_id 517 rect_id_ack 516
+[ 76241.518] rdpDeferredUpdateCallback: reschedule rect_id 737 rect_id_ack 736
+[ 76241.624] rdpDeferredUpdateCallback: reschedule rect_id 738 rect_id_ack 737
+[ 76246.490] rdpDeferredUpdateCallback: reschedule rect_id 803 rect_id_ack 802
+[ 76246.531] rdpDeferredUpdateCallback: reschedule rect_id 803 rect_id_ack 802
+[ 76246.571] rdpDeferredUpdateCallback: reschedule rect_id 803 rect_id_ack 802
+[ 76256.631] rdpDeferredUpdateCallback: reschedule rect_id 936 rect_id_ack 935
+[ 76256.671] rdpDeferredUpdateCallback: reschedule rect_id 936 rect_id_ack 935
+[ 76256.712] rdpDeferredUpdateCallback: reschedule rect_id 936 rect_id_ack 935
+[ 76256.752] rdpDeferredUpdateCallback: reschedule rect_id 936 rect_id_ack 935
+[ 76256.792] rdpDeferredUpdateCallback: reschedule rect_id 936 rect_id_ack 935
+[ 76256.832] rdpDeferredUpdateCallback: reschedule rect_id 936 rect_id_ack 935
+[ 76256.872] rdpDeferredUpdateCallback: reschedule rect_id 936 rect_id_ack 935
+[ 76256.912] rdpDeferredUpdateCallback: reschedule rect_id 936 rect_id_ack 935
+[ 76275.649] rdpDeferredUpdateCallback: reschedule rect_id 953 rect_id_ack 952
+[ 76275.689] rdpDeferredUpdateCallback: reschedule rect_id 953 rect_id_ack 952
+[ 76275.729] rdpDeferredUpdateCallback: reschedule rect_id 953 rect_id_ack 952
+[ 76276.288] rdpDeferredUpdateCallback: reschedule rect_id 954 rect_id_ack 953
+[ 76276.329] rdpDeferredUpdateCallback: reschedule rect_id 954 rect_id_ack 953
+[ 76390.490] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1919 cy 1079
+[ 76390.508] KbdSync: toggling num lock
+[ 76390.508] rdpkeybChangeKeyboardControl:
+[ 76390.508] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 76390.509] rdpkeybChangeKeyboardControl:
+[ 76390.509] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 76390.608] rdpInDeferredUpdateCallback:
+[ 76390.608] rdpkeybChangeKeyboardControl:
+[ 76390.608] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 76390.608] rdpkeybChangeKeyboardControl:
+[ 76390.608] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 76391.856] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76391.896] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76391.937] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76391.977] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.017] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.057] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.098] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.138] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.178] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.219] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.259] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.299] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.340] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.380] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.421] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.461] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.501] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.541] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.582] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.622] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.662] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.703] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.743] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.783] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76392.823] rdpDeferredUpdateCallback: reschedule rect_id 1038 rect_id_ack 1037
+[ 76405.617] rdpRRGetPanning: 0x17b56a8
+[ 76405.781] rdpDeferredUpdateCallback: reschedule rect_id 1056 rect_id_ack 1055
+[ 76405.821] rdpDeferredUpdateCallback: reschedule rect_id 1056 rect_id_ack 1055
+[ 76405.862] rdpDeferredUpdateCallback: reschedule rect_id 1056 rect_id_ack 1055
+[ 76405.902] rdpDeferredUpdateCallback: reschedule rect_id 1056 rect_id_ack 1055
+[ 76405.942] rdpDeferredUpdateCallback: reschedule rect_id 1056 rect_id_ack 1055
+[ 76406.866] rdpDeferredUpdateCallback: reschedule rect_id 1057 rect_id_ack 1056
+[ 76406.907] rdpDeferredUpdateCallback: reschedule rect_id 1057 rect_id_ack 1056
+[ 76406.947] rdpDeferredUpdateCallback: reschedule rect_id 1057 rect_id_ack 1056
+[ 76406.987] rdpDeferredUpdateCallback: reschedule rect_id 1057 rect_id_ack 1056
+[ 76407.028] rdpDeferredUpdateCallback: reschedule rect_id 1057 rect_id_ack 1056
+[ 76433.884] rdpDeferredUpdateCallback: reschedule rect_id 1078 rect_id_ack 1077
+[ 76454.897] rdpDeferredUpdateCallback: reschedule rect_id 1096 rect_id_ack 1095
+[ 76454.938] rdpDeferredUpdateCallback: reschedule rect_id 1096 rect_id_ack 1095
+[ 76454.978] rdpDeferredUpdateCallback: reschedule rect_id 1096 rect_id_ack 1095
+[ 76455.627] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76455.667] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76455.708] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76455.748] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76455.788] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76455.829] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76455.869] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76455.909] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76455.949] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76455.990] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76456.030] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76456.070] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76456.111] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76456.151] rdpDeferredUpdateCallback: reschedule rect_id 1097 rect_id_ack 1096
+[ 76547.947] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76547.987] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76548.027] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76548.068] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76548.109] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76548.149] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76548.189] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76548.230] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76548.270] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76548.310] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76548.351] rdpDeferredUpdateCallback: reschedule rect_id 1183 rect_id_ack 1182
+[ 76548.592] rdpDeferredUpdateCallback: reschedule rect_id 1184 rect_id_ack 1183
+[ 76548.632] rdpDeferredUpdateCallback: reschedule rect_id 1184 rect_id_ack 1183
+[ 76548.672] rdpDeferredUpdateCallback: reschedule rect_id 1184 rect_id_ack 1183
+[ 76548.713] rdpDeferredUpdateCallback: reschedule rect_id 1184 rect_id_ack 1183
+[ 76548.753] rdpDeferredUpdateCallback: reschedule rect_id 1184 rect_id_ack 1183
+[ 76548.793] rdpDeferredUpdateCallback: reschedule rect_id 1184 rect_id_ack 1183
+[ 76548.833] rdpDeferredUpdateCallback: reschedule rect_id 1184 rect_id_ack 1183
+[ 76548.873] rdpDeferredUpdateCallback: reschedule rect_id 1184 rect_id_ack 1183
+[ 76548.914] rdpDeferredUpdateCallback: reschedule rect_id 1184 rect_id_ack 1183
+[ 76548.954] rdpDeferredUpdateCallback: reschedule rect_id 1184 rect_id_ack 1183
+[ 76551.151] rdpDeferredUpdateCallback: reschedule rect_id 1189 rect_id_ack 1188
+[ 76551.191] rdpDeferredUpdateCallback: reschedule rect_id 1189 rect_id_ack 1188
+[ 76551.231] rdpDeferredUpdateCallback: reschedule rect_id 1189 rect_id_ack 1188
+[ 76551.271] rdpDeferredUpdateCallback: reschedule rect_id 1189 rect_id_ack 1188
+[ 76551.311] rdpDeferredUpdateCallback: reschedule rect_id 1189 rect_id_ack 1188
+[ 76551.351] rdpDeferredUpdateCallback: reschedule rect_id 1189 rect_id_ack 1188
+[ 76551.391] rdpDeferredUpdateCallback: reschedule rect_id 1189 rect_id_ack 1188
+[ 76551.432] rdpDeferredUpdateCallback: reschedule rect_id 1189 rect_id_ack 1188
+[ 76557.591] rdpDeferredUpdateCallback: reschedule rect_id 1202 rect_id_ack 1201
+[ 76557.631] rdpDeferredUpdateCallback: reschedule rect_id 1202 rect_id_ack 1201
+[ 76557.672] rdpDeferredUpdateCallback: reschedule rect_id 1202 rect_id_ack 1201
+[ 77153.126] rdpSaveScreen:
+[ 77753.127] rdpSaveScreen:
+[ 78353.128] rdpSaveScreen:
+[ 78953.129] rdpSaveScreen:
+[ 79553.129] rdpSaveScreen:
+[ 80153.130] rdpSaveScreen:
+[ 80753.130] rdpSaveScreen:
+[ 81353.130] rdpSaveScreen:
+[ 81953.131] rdpSaveScreen:
+[ 82553.132] rdpSaveScreen:
+[ 83153.134] rdpSaveScreen:
+[ 83753.134] rdpSaveScreen:
+[ 84353.134] rdpSaveScreen:
+[ 84953.135] rdpSaveScreen:
+[ 85080.871] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1919 cy 1079
+[ 85080.879] rdpSaveScreen:
+[ 85081.024] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.064] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.105] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.145] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.185] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.225] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.266] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.306] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.346] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.386] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.427] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.467] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.507] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.548] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.588] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.628] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85081.668] rdpDeferredUpdateCallback: reschedule rect_id 7282 rect_id_ack 7281
+[ 85084.752] rdpDeferredUpdateCallback: reschedule rect_id 7286 rect_id_ack 7285
+[ 85084.792] rdpDeferredUpdateCallback: reschedule rect_id 7286 rect_id_ack 7285
+[ 85084.833] rdpDeferredUpdateCallback: reschedule rect_id 7286 rect_id_ack 7285
+[ 85084.873] rdpDeferredUpdateCallback: reschedule rect_id 7286 rect_id_ack 7285
+[ 85084.913] rdpDeferredUpdateCallback: reschedule rect_id 7286 rect_id_ack 7285
+[ 85084.953] rdpDeferredUpdateCallback: reschedule rect_id 7286 rect_id_ack 7285
+[ 85094.973] rdpClientConRecv: g_sck_recv failed(returned 0)
+[ 85094.974] rdpClientConDisconnect:
+[ 85094.974] rdpClientConDisconnect: clientCon removed from dev list
+[ 85094.974] rdpClientConRecvMsg: error
+[ 85094.974] rdpClientConCheck: rdpClientConGotData failed
+[ 85694.939] rdpSaveScreen:
+[ 86294.944] rdpSaveScreen:
+[ 86894.946] rdpSaveScreen:
+[ 87494.947] rdpSaveScreen:
+[ 88094.947] rdpSaveScreen:
+[ 88694.949] rdpSaveScreen:
+[ 89294.950] rdpSaveScreen:
+[ 89894.950] rdpSaveScreen:
+[ 90494.952] rdpSaveScreen:
+[ 91094.954] rdpSaveScreen:
+[ 91694.955] rdpSaveScreen:
+[ 92294.955] rdpSaveScreen:
+[ 92894.957] rdpSaveScreen:
+[ 93494.957] rdpSaveScreen:
+[ 94094.957] rdpSaveScreen:
+[ 94694.959] rdpSaveScreen:
+[ 95294.962] rdpSaveScreen:
+[ 95894.964] rdpSaveScreen:
+[ 96494.964] rdpSaveScreen:
+[ 97094.965] rdpSaveScreen:
+[ 97694.967] rdpSaveScreen:
+[ 98294.969] rdpSaveScreen:
+[ 98894.970] rdpSaveScreen:
+[ 99494.976] rdpSaveScreen:
+[100094.980] rdpSaveScreen:
+[100694.981] rdpSaveScreen:
+[101294.982] rdpSaveScreen:
+[101894.982] rdpSaveScreen:
+[102494.982] rdpSaveScreen:
+[103094.983] rdpSaveScreen:
+[103694.984] rdpSaveScreen:
+[104294.984] rdpSaveScreen:
+[104894.985] rdpSaveScreen:
+[105494.986] rdpSaveScreen:
+[106094.986] rdpSaveScreen:
+[106694.987] rdpSaveScreen:
+[107294.989] rdpSaveScreen:
+[107894.989] rdpSaveScreen:
+[108494.991] rdpSaveScreen:
+[109094.991] rdpSaveScreen:
+[109694.994] rdpSaveScreen:
+[110294.995] rdpSaveScreen:
+[110894.995] rdpSaveScreen:
+[111494.998] rdpSaveScreen:
+[112095.000] rdpSaveScreen:
+[112695.001] rdpSaveScreen:
+[113295.002] rdpSaveScreen:
+[113895.002] rdpSaveScreen:
+[114495.003] rdpSaveScreen:
+[115095.003] rdpSaveScreen:
+[115695.003] rdpSaveScreen:
+[116295.004] rdpSaveScreen:
+[116895.004] rdpSaveScreen:
+[117495.005] rdpSaveScreen:
+[118095.007] rdpSaveScreen:
+[118695.009] rdpSaveScreen:
+[119295.011] rdpSaveScreen:
+[119895.011] rdpSaveScreen:
+[120495.012] rdpSaveScreen:
+[121095.013] rdpSaveScreen:
+[121695.015] rdpSaveScreen:
+[122295.022] rdpSaveScreen:
+[122895.023] rdpSaveScreen:
+[123495.024] rdpSaveScreen:
+[124095.024] rdpSaveScreen:
+[124695.026] rdpSaveScreen:
+[125295.027] rdpSaveScreen:
+[125895.027] rdpSaveScreen:
+[126495.029] rdpSaveScreen:
+[127095.030] rdpSaveScreen:
+[127695.031] rdpSaveScreen:
+[128295.032] rdpSaveScreen:
+[128895.033] rdpSaveScreen:
+[129495.034] rdpSaveScreen:
+[130095.035] rdpSaveScreen:
+[130695.036] rdpSaveScreen:
+[131295.037] rdpSaveScreen:
+[131895.037] rdpSaveScreen:
+[132495.037] rdpSaveScreen:
+[133095.038] rdpSaveScreen:
+[133695.039] rdpSaveScreen:
+[134295.039] rdpSaveScreen:
+[134895.040] rdpSaveScreen:
+[135495.043] rdpSaveScreen:
+[136095.044] rdpSaveScreen:
+[136695.044] rdpSaveScreen:
+[137295.049] rdpSaveScreen:
+[137895.049] rdpSaveScreen:
+[138495.051] rdpSaveScreen:
+[139095.053] rdpSaveScreen:
+[139695.054] rdpSaveScreen:
+[140295.055] rdpSaveScreen:
+[140895.055] rdpSaveScreen:
+[141495.057] rdpSaveScreen:
+[142095.059] rdpSaveScreen:
+[142695.059] rdpSaveScreen:
+[143295.061] rdpSaveScreen:
+[143895.062] rdpSaveScreen:
+[144495.063] rdpSaveScreen:
+[145095.063] rdpSaveScreen:
+[145695.064] rdpSaveScreen:
+[146295.065] rdpSaveScreen:
+[146895.065] rdpSaveScreen:
+[147495.066] rdpSaveScreen:
+[148095.068] rdpSaveScreen:
+[148695.069] rdpSaveScreen:
+[149295.070] rdpSaveScreen:
+[149895.070] rdpSaveScreen:
+[150495.072] rdpSaveScreen:
+[151095.074] rdpSaveScreen:
+[151695.074] rdpSaveScreen:
+[152295.076] rdpSaveScreen:
+[152895.077] rdpSaveScreen:
+[153495.079] rdpSaveScreen:
+[154095.080] rdpSaveScreen:
+[154695.080] rdpSaveScreen:
+[155295.081] rdpSaveScreen:
+[155895.081] rdpSaveScreen:
+[156495.082] rdpSaveScreen:
+[157095.083] rdpSaveScreen:
+[157695.085] rdpSaveScreen:
+[158295.085] rdpSaveScreen:
+[158895.088] rdpSaveScreen:
+[159495.090] rdpSaveScreen:
+[160095.090] rdpSaveScreen:
+[160695.091] rdpSaveScreen:
+[161295.092] rdpSaveScreen:
+[161895.093] rdpSaveScreen:
+[162495.093] rdpSaveScreen:
+[163095.094] rdpSaveScreen:
+[163695.095] rdpSaveScreen:
+[164295.095] rdpSaveScreen:
+[164895.097] rdpSaveScreen:
+[165495.098] rdpSaveScreen:
+[166095.098] rdpSaveScreen:
+[166695.098] rdpSaveScreen:
+[167295.099] rdpSaveScreen:
+[167895.100] rdpSaveScreen:
+[168495.100] rdpSaveScreen:
+[169095.101] rdpSaveScreen:
+[169695.102] rdpSaveScreen:
+[170295.102] rdpSaveScreen:
+[170895.103] rdpSaveScreen:
+[171495.104] rdpSaveScreen:
+[172095.106] rdpSaveScreen:
+[172695.107] rdpSaveScreen:
+[173295.107] rdpSaveScreen:
+[173895.109] rdpSaveScreen:
+[174495.109] rdpSaveScreen:
+[175095.110] rdpSaveScreen:
+[175695.112] rdpSaveScreen:
+[176295.112] rdpSaveScreen:
+[176895.113] rdpSaveScreen:
+[177495.113] rdpSaveScreen:
+[178095.114] rdpSaveScreen:
+[178695.115] rdpSaveScreen:
+[179295.115] rdpSaveScreen:
+[179895.116] rdpSaveScreen:
+[180495.117] rdpSaveScreen:
+[181095.118] rdpSaveScreen:
+[181695.119] rdpSaveScreen:
+[182295.119] rdpSaveScreen:
+[182895.119] rdpSaveScreen:
+[183495.120] rdpSaveScreen:
+[184095.121] rdpSaveScreen:
+[184695.122] rdpSaveScreen:
+[185295.122] rdpSaveScreen:
+[185895.124] rdpSaveScreen:
+[186495.124] rdpSaveScreen:
+[187095.125] rdpSaveScreen:
+[187695.125] rdpSaveScreen:
+[188295.126] rdpSaveScreen:
+[188895.127] rdpSaveScreen:
+[189495.129] rdpSaveScreen:
+[190095.131] rdpSaveScreen:
+[190695.132] rdpSaveScreen:
+[191295.133] rdpSaveScreen:
+[191895.134] rdpSaveScreen:
+[192495.136] rdpSaveScreen:
+[193095.137] rdpSaveScreen:
+[193695.138] rdpSaveScreen:
+[194295.138] rdpSaveScreen:
+[194895.140] rdpSaveScreen:
+[195495.142] rdpSaveScreen:
+[196095.143] rdpSaveScreen:
+[196695.144] rdpSaveScreen:
+[197295.144] rdpSaveScreen:
+[197895.145] rdpSaveScreen:
+[198495.146] rdpSaveScreen:
+[199095.148] rdpSaveScreen:
+[199695.149] rdpSaveScreen:
+[200295.149] rdpSaveScreen:
+[200895.149] rdpSaveScreen:
+[201495.150] rdpSaveScreen:
+[202095.151] rdpSaveScreen:
+[202695.151] rdpSaveScreen:
+[203295.153] rdpSaveScreen:
+[203895.153] rdpSaveScreen:
+[204495.154] rdpSaveScreen:
+[205095.157] rdpSaveScreen:
+[205695.157] rdpSaveScreen:
+[206295.157] rdpSaveScreen:
+[206895.160] rdpSaveScreen:
+[207495.160] rdpSaveScreen:
+[208095.161] rdpSaveScreen:
+[208695.162] rdpSaveScreen:
+[209295.163] rdpSaveScreen:
+[209895.164] rdpSaveScreen:
+[210495.166] rdpSaveScreen:
+[211095.167] rdpSaveScreen:
+[211695.167] rdpSaveScreen:
+[212295.168] rdpSaveScreen:
+[212895.170] rdpSaveScreen:
+[213495.171] rdpSaveScreen:
+[214095.172] rdpSaveScreen:
+[214695.172] rdpSaveScreen:
+[215295.173] rdpSaveScreen:
+[215895.175] rdpSaveScreen:
+[216495.176] rdpSaveScreen:
+[217095.176] rdpSaveScreen:
+[217695.177] rdpSaveScreen:
+[218295.177] rdpSaveScreen:
+[218895.177] rdpSaveScreen:
+[219495.179] rdpSaveScreen:
+[220095.179] rdpSaveScreen:
+[220695.181] rdpSaveScreen:
+[221295.183] rdpSaveScreen:
+[221895.184] rdpSaveScreen:
+[222495.184] rdpSaveScreen:
+[223095.185] rdpSaveScreen:
+[223695.186] rdpSaveScreen:
+[224295.186] rdpSaveScreen:
+[224895.188] rdpSaveScreen:
+[225495.191] rdpSaveScreen:
+[226095.191] rdpSaveScreen:
+[226695.193] rdpSaveScreen:
+[227295.194] rdpSaveScreen:
+[227895.195] rdpSaveScreen:
+[228495.196] rdpSaveScreen:
+[229095.197] rdpSaveScreen:
+[229695.198] rdpSaveScreen:
+[230295.200] rdpSaveScreen:
+[230895.201] rdpSaveScreen:
+[231495.202] rdpSaveScreen:
+[232095.203] rdpSaveScreen:
+[232695.203] rdpSaveScreen:
+[233295.205] rdpSaveScreen:
+[233895.206] rdpSaveScreen:
+[234495.207] rdpSaveScreen:
+[235095.208] rdpSaveScreen:
+[235695.208] rdpSaveScreen:
+[236295.209] rdpSaveScreen:
+[236895.209] rdpSaveScreen:
+[237495.210] rdpSaveScreen:
+[238095.212] rdpSaveScreen:
+[238695.212] rdpSaveScreen:
+[239295.214] rdpSaveScreen:
+[239895.215] rdpSaveScreen:
+[240495.216] rdpSaveScreen:
+[241095.217] rdpSaveScreen:
+[241695.217] rdpSaveScreen:
+[242295.217] rdpSaveScreen:
+[242895.219] rdpSaveScreen:
+[243495.220] rdpSaveScreen:
+[244095.221] rdpSaveScreen:
+[244695.221] rdpSaveScreen:
+[245295.222] rdpSaveScreen:
+[245895.223] rdpSaveScreen:
+[246495.226] rdpSaveScreen:
+[247095.227] rdpSaveScreen:
+[247695.227] rdpSaveScreen:
+[248295.228] rdpSaveScreen:
+[248895.230] rdpSaveScreen:
+[249495.231] rdpSaveScreen:
+[250095.232] rdpSaveScreen:
+[250695.233] rdpSaveScreen:
+[251295.235] rdpSaveScreen:
+[251895.236] rdpSaveScreen:
+[252495.236] rdpSaveScreen:
+[253095.237] rdpSaveScreen:
+[253695.238] rdpSaveScreen:
+[254295.238] rdpSaveScreen:
+[254895.240] rdpSaveScreen:
+[255495.241] rdpSaveScreen:
+[256095.241] rdpSaveScreen:
+[256695.243] rdpSaveScreen:
+[257295.244] rdpSaveScreen:
+[257895.244] rdpSaveScreen:
+[258495.246] rdpSaveScreen:
+[259095.248] rdpSaveScreen:
+[259695.248] rdpSaveScreen:
+[260295.250] rdpSaveScreen:
+[260895.251] rdpSaveScreen:
+[261495.252] rdpSaveScreen:
+[262095.252] rdpSaveScreen:
+[262695.253] rdpSaveScreen:
+[263295.254] rdpSaveScreen:
+[263895.256] rdpSaveScreen:
+[264495.257] rdpSaveScreen:
+[265095.257] rdpSaveScreen:
+[265695.258] rdpSaveScreen:
+[266295.260] rdpSaveScreen:
+[266895.260] rdpSaveScreen:
+[267495.262] rdpSaveScreen:
+[268095.263] rdpSaveScreen:
+[268695.263] rdpSaveScreen:
+[269295.265] rdpSaveScreen:
+[269895.266] rdpSaveScreen:
+[270495.266] rdpSaveScreen:
+[271095.266] rdpSaveScreen:
+[271695.267] rdpSaveScreen:
+[272295.268] rdpSaveScreen:
+[272895.270] rdpSaveScreen:
+[273495.271] rdpSaveScreen:
+[274095.271] rdpSaveScreen:
+[274695.272] rdpSaveScreen:
+[275295.273] rdpSaveScreen:
+[275895.274] rdpSaveScreen:
+[276495.274] rdpSaveScreen:
+[277095.274] rdpSaveScreen:
+[277695.275] rdpSaveScreen:
+[278295.275] rdpSaveScreen:
+[278895.276] rdpSaveScreen:
+[279495.277] rdpSaveScreen:
+[280095.277] rdpSaveScreen:
+[280695.278] rdpSaveScreen:
+[281295.278] rdpSaveScreen:
+[281895.278] rdpSaveScreen:
+[282495.279] rdpSaveScreen:
+[283095.279] rdpSaveScreen:
+[283695.280] rdpSaveScreen:
+[284295.281] rdpSaveScreen:
+[284895.282] rdpSaveScreen:
+[285495.283] rdpSaveScreen:
+[286095.284] rdpSaveScreen:
+[286695.285] rdpSaveScreen:
+[287295.285] rdpSaveScreen:
+[287895.286] rdpSaveScreen:
+[288495.287] rdpSaveScreen:
+[289095.287] rdpSaveScreen:
+[289695.288] rdpSaveScreen:
+[290295.289] rdpSaveScreen:
+[290895.289] rdpSaveScreen:
+[291495.289] rdpSaveScreen:
+[292095.291] rdpSaveScreen:
+[292695.292] rdpSaveScreen:
+[293295.293] rdpSaveScreen:
+[293895.294] rdpSaveScreen:
+[294495.295] rdpSaveScreen:
+[295095.296] rdpSaveScreen:
+[295695.297] rdpSaveScreen:
+[296295.298] rdpSaveScreen:
+[296895.299] rdpSaveScreen:
+[297495.299] rdpSaveScreen:
+[298095.301] rdpSaveScreen:
+[298695.301] rdpSaveScreen:
+[299295.302] rdpSaveScreen:
+[299895.302] rdpSaveScreen:
+[300495.302] rdpSaveScreen:
+[301095.303] rdpSaveScreen:
+[301695.303] rdpSaveScreen:
+[302295.304] rdpSaveScreen:
+[302895.305] rdpSaveScreen:
+[303495.305] rdpSaveScreen:
+[304095.306] rdpSaveScreen:
+[304695.307] rdpSaveScreen:
+[305295.308] rdpSaveScreen:
+[305895.309] rdpSaveScreen:
+[306495.309] rdpSaveScreen:
+[307095.310] rdpSaveScreen:
+[307695.310] rdpSaveScreen:
+[308295.311] rdpSaveScreen:
+[308895.313] rdpSaveScreen:
+[309495.313] rdpSaveScreen:
+[310095.314] rdpSaveScreen:
+[310695.316] rdpSaveScreen:
+[311295.316] rdpSaveScreen:
+[311895.316] rdpSaveScreen:
+[312495.317] rdpSaveScreen:
+[313095.318] rdpSaveScreen:
+[313695.318] rdpSaveScreen:
+[314295.320] rdpSaveScreen:
+[314895.320] rdpSaveScreen:
+[315495.320] rdpSaveScreen:
+[316095.320] rdpSaveScreen:
+[316695.321] rdpSaveScreen:
+[317295.323] rdpSaveScreen:
+[317895.324] rdpSaveScreen:
+[318495.325] rdpSaveScreen:
+[319095.326] rdpSaveScreen:
+[319695.326] rdpSaveScreen:
+[320295.327] rdpSaveScreen:
+[320895.328] rdpSaveScreen:
+[321495.328] rdpSaveScreen:
+[322095.331] rdpSaveScreen:
+[322695.331] rdpSaveScreen:
+[323295.331] rdpSaveScreen:
+[323895.331] rdpSaveScreen:
+[324495.332] rdpSaveScreen:
+[325095.333] rdpSaveScreen:
+[325695.333] rdpSaveScreen:
+[326295.335] rdpSaveScreen:
+[326895.335] rdpSaveScreen:
+[327495.336] rdpSaveScreen:
+[328095.337] rdpSaveScreen:
+[328695.338] rdpSaveScreen:
+[329295.341] rdpSaveScreen:
+[329895.342] rdpSaveScreen:
+[330495.342] rdpSaveScreen:
+[331095.344] rdpSaveScreen:
+[331695.344] rdpSaveScreen:
+[332295.346] rdpSaveScreen:
+[332895.347] rdpSaveScreen:
+[333495.348] rdpSaveScreen:
+[334095.349] rdpSaveScreen:
+[334695.351] rdpSaveScreen:
+[335295.353] rdpSaveScreen:
+[335895.354] rdpSaveScreen:
+[336495.354] rdpSaveScreen:
+[337095.355] rdpSaveScreen:
+[337695.356] rdpSaveScreen:
+[338295.359] rdpSaveScreen:
+[338895.360] rdpSaveScreen:
+[339495.360] rdpSaveScreen:
+[340095.361] rdpSaveScreen:
+[340695.362] rdpSaveScreen:
+[341295.364] rdpSaveScreen:
+[341895.364] rdpSaveScreen:
+[342495.364] rdpSaveScreen:
+[343095.367] rdpSaveScreen:
+[343695.367] rdpSaveScreen:
+[344295.369] rdpSaveScreen:
+[344895.369] rdpSaveScreen:
+[345495.370] rdpSaveScreen:
+[346095.372] rdpSaveScreen:
+[346695.373] rdpSaveScreen:
+[347295.375] rdpSaveScreen:
+[347895.376] rdpSaveScreen:
+[348495.376] rdpSaveScreen:
+[349095.378] rdpSaveScreen:
+[349695.379] rdpSaveScreen:
+[350295.381] rdpSaveScreen:
+[350895.382] rdpSaveScreen:
+[351495.383] rdpSaveScreen:
+[352095.384] rdpSaveScreen:
+[352695.385] rdpSaveScreen:
+[353295.386] rdpSaveScreen:
+[353895.387] rdpSaveScreen:
+[354495.387] rdpSaveScreen:
+[355095.387] rdpSaveScreen:
+[355695.388] rdpSaveScreen:
+[356295.389] rdpSaveScreen:
+[356895.390] rdpSaveScreen:
+[357495.391] rdpSaveScreen:
+[358095.391] rdpSaveScreen:
+[358695.392] rdpSaveScreen:
+[359295.394] rdpSaveScreen:
+[359895.396] rdpSaveScreen:
+[360495.397] rdpSaveScreen:
+[361095.398] rdpSaveScreen:
+[361695.400] rdpSaveScreen:
+[362295.401] rdpSaveScreen:
+[362895.402] rdpSaveScreen:
+[363495.403] rdpSaveScreen:
+[364095.404] rdpSaveScreen:
+[364695.405] rdpSaveScreen:
+[365295.406] rdpSaveScreen:
+[365895.406] rdpSaveScreen:
+[366495.407] rdpSaveScreen:
+[367095.408] rdpSaveScreen:
+[367695.410] rdpSaveScreen:
+[368295.411] rdpSaveScreen:
+[368895.412] rdpSaveScreen:
+[369495.413] rdpSaveScreen:
+[370095.414] rdpSaveScreen:
+[370695.415] rdpSaveScreen:
+[371295.416] rdpSaveScreen:
+[371895.416] rdpSaveScreen:
+[372495.418] rdpSaveScreen:
+[373095.418] rdpSaveScreen:
+[373695.419] rdpSaveScreen:
+[374295.420] rdpSaveScreen:
+[374895.420] rdpSaveScreen:
+[375495.421] rdpSaveScreen:
+[376095.421] rdpSaveScreen:
+[376695.423] rdpSaveScreen:
+[377295.423] rdpSaveScreen:
+[377895.424] rdpSaveScreen:
+[378495.425] rdpSaveScreen:
+[379095.426] rdpSaveScreen:
+[379695.427] rdpSaveScreen:
+[380295.427] rdpSaveScreen:
+[380895.428] rdpSaveScreen:
+[381495.428] rdpSaveScreen:
+[382095.430] rdpSaveScreen:
+[382695.431] rdpSaveScreen:
+[383295.431] rdpSaveScreen:
+[383895.432] rdpSaveScreen:
+[384495.433] rdpSaveScreen:
+[385095.435] rdpSaveScreen:
+[385695.436] rdpSaveScreen:
+[386295.437] rdpSaveScreen:
+[386895.438] rdpSaveScreen:
+[387495.438] rdpSaveScreen:
+[388095.440] rdpSaveScreen:
+[388695.443] rdpSaveScreen:
+[389295.444] rdpSaveScreen:
+[389895.444] rdpSaveScreen:
+[390495.445] rdpSaveScreen:
+[391095.446] rdpSaveScreen:
+[391695.447] rdpSaveScreen:
+[392295.448] rdpSaveScreen:
+[392895.448] rdpSaveScreen:
+[393495.450] rdpSaveScreen:
+[394095.450] rdpSaveScreen:
+[394695.452] rdpSaveScreen:
+[395295.453] rdpSaveScreen:
+[395895.453] rdpSaveScreen:
+[396495.455] rdpSaveScreen:
+[397095.455] rdpSaveScreen:
+[397695.456] rdpSaveScreen:
+[398295.457] rdpSaveScreen:
+[398895.458] rdpSaveScreen:
+[399495.459] rdpSaveScreen:
+[400095.460] rdpSaveScreen:
+[400695.460] rdpSaveScreen:
+[401295.460] rdpSaveScreen:
+[401895.462] rdpSaveScreen:
+[402495.463] rdpSaveScreen:
+[403095.464] rdpSaveScreen:
+[403695.464] rdpSaveScreen:
+[404295.466] rdpSaveScreen:
+[404895.468] rdpSaveScreen:
+[405495.468] rdpSaveScreen:
+[406095.469] rdpSaveScreen:
+[406695.471] rdpSaveScreen:
+[407295.471] rdpSaveScreen:
+[407895.471] rdpSaveScreen:
+[408495.473] rdpSaveScreen:
+[409095.473] rdpSaveScreen:
+[409695.474] rdpSaveScreen:
+[410295.474] rdpSaveScreen:
+[410895.474] rdpSaveScreen:
+[411495.475] rdpSaveScreen:
+[412095.475] rdpSaveScreen:
+[412695.475] rdpSaveScreen:
+[413295.475] rdpSaveScreen:
+[413895.476] rdpSaveScreen:
+[414495.477] rdpSaveScreen:
+[415095.477] rdpSaveScreen:
+[415695.478] rdpSaveScreen:
+[416295.483] rdpSaveScreen:
+[416895.485] rdpSaveScreen:
+[417495.486] rdpSaveScreen:
+[418095.487] rdpSaveScreen:
+[418695.488] rdpSaveScreen:
+[419295.489] rdpSaveScreen:
+[419895.489] rdpSaveScreen:
+[420495.490] rdpSaveScreen:
+[421095.490] rdpSaveScreen:
+[421695.491] rdpSaveScreen:
+[422295.491] rdpSaveScreen:
+[422895.492] rdpSaveScreen:
+[423495.493] rdpSaveScreen:
+[424095.493] rdpSaveScreen:
+[424695.493] rdpSaveScreen:
+[425295.493] rdpSaveScreen:
+[425895.493] rdpSaveScreen:
+[426495.494] rdpSaveScreen:
+[427095.495] rdpSaveScreen:
+[427695.495] rdpSaveScreen:
+[428295.495] rdpSaveScreen:
+[428895.497] rdpSaveScreen:
+[429495.497] rdpSaveScreen:
+[430095.497] rdpSaveScreen:
+[430695.498] rdpSaveScreen:
+[431295.498] rdpSaveScreen:
+[431895.500] rdpSaveScreen:
+[432495.500] rdpSaveScreen:
+[433095.500] rdpSaveScreen:
+[433695.501] rdpSaveScreen:
+[434295.503] rdpSaveScreen:
+[434895.503] rdpSaveScreen:
+[435495.504] rdpSaveScreen:
+[436095.505] rdpSaveScreen:
+[436695.506] rdpSaveScreen:
+[437295.507] rdpSaveScreen:
+[437895.507] rdpSaveScreen:
+[438495.508] rdpSaveScreen:
+[439095.509] rdpSaveScreen:
+[439695.509] rdpSaveScreen:
+[440295.509] rdpSaveScreen:
+[440895.511] rdpSaveScreen:
+[441495.511] rdpSaveScreen:
+[442095.512] rdpSaveScreen:
+[442695.512] rdpSaveScreen:
+[443295.514] rdpSaveScreen:
+[443895.515] rdpSaveScreen:
+[444495.516] rdpSaveScreen:
+[445095.517] rdpSaveScreen:
+[445695.517] rdpSaveScreen:
+[446295.518] rdpSaveScreen:
+[446895.519] rdpSaveScreen:
+[447495.520] rdpSaveScreen:
+[448095.521] rdpSaveScreen:
+[448695.523] rdpSaveScreen:
+[449295.523] rdpSaveScreen:
+[449895.525] rdpSaveScreen:
+[450495.525] rdpSaveScreen:
+[451095.526] rdpSaveScreen:
+[451695.527] rdpSaveScreen:
+[452295.527] rdpSaveScreen:
+[452895.528] rdpSaveScreen:
+[453495.528] rdpSaveScreen:
+[454095.530] rdpSaveScreen:
+[454695.531] rdpSaveScreen:
+[455295.532] rdpSaveScreen:
+[455895.533] rdpSaveScreen:
+[456495.534] rdpSaveScreen:
+[457095.534] rdpSaveScreen:
+[457695.534] rdpSaveScreen:
+[458295.535] rdpSaveScreen:
+[458895.536] rdpSaveScreen:
+[459495.536] rdpSaveScreen:
+[460095.537] rdpSaveScreen:
+[460695.537] rdpSaveScreen:
+[461295.537] rdpSaveScreen:
+[461895.537] rdpSaveScreen:
+[462495.538] rdpSaveScreen:
+[463095.539] rdpSaveScreen:
+[463695.539] rdpSaveScreen:
+[464295.540] rdpSaveScreen:
+[464895.541] rdpSaveScreen:
+[465495.542] rdpSaveScreen:
+[466095.542] rdpSaveScreen:
+[466695.542] rdpSaveScreen:
+[467295.542] rdpSaveScreen:
+[467895.542] rdpSaveScreen:
+[468495.543] rdpSaveScreen:
+[469095.544] rdpSaveScreen:
+[469695.545] rdpSaveScreen:
+[470295.545] rdpSaveScreen:
+[470895.545] rdpSaveScreen:
+[471495.547] rdpSaveScreen:
+[472095.547] rdpSaveScreen:
+[472695.547] rdpSaveScreen:
+[473295.548] rdpSaveScreen:
+[473895.548] rdpSaveScreen:
+[474495.548] rdpSaveScreen:
+[475095.550] rdpSaveScreen:
+[475695.550] rdpSaveScreen:
+[476295.551] rdpSaveScreen:
+[476895.551] rdpSaveScreen:
+[477495.552] rdpSaveScreen:
+[478095.553] rdpSaveScreen:
+[478695.554] rdpSaveScreen:
+[479295.554] rdpSaveScreen:
+[479895.554] rdpSaveScreen:
+[480495.555] rdpSaveScreen:
+[481095.555] rdpSaveScreen:
+[481695.555] rdpSaveScreen:
+[482295.555] rdpSaveScreen:
+[482895.556] rdpSaveScreen:
+[483495.556] rdpSaveScreen:
+[484095.556] rdpSaveScreen:
+[484695.556] rdpSaveScreen:
+[485295.557] rdpSaveScreen:
+[485895.557] rdpSaveScreen:
+[486495.557] rdpSaveScreen:
+[487095.558] rdpSaveScreen:
+[487695.559] rdpSaveScreen:
+[488295.560] rdpSaveScreen:
+[488895.560] rdpSaveScreen:
+[489495.561] rdpSaveScreen:
+[490095.562] rdpSaveScreen:
+[490695.562] rdpSaveScreen:
+[491295.563] rdpSaveScreen:
+[491895.563] rdpSaveScreen:
+[492495.564] rdpSaveScreen:
+[493095.566] rdpSaveScreen:
+[493695.567] rdpSaveScreen:
+[494295.568] rdpSaveScreen:
+[494895.569] rdpSaveScreen:
+[495495.569] rdpSaveScreen:
+[496095.570] rdpSaveScreen:
+[496695.571] rdpSaveScreen:
+[497295.572] rdpSaveScreen:
+[497895.572] rdpSaveScreen:
+[498495.573] rdpSaveScreen:
+[499095.574] rdpSaveScreen:
+[499695.574] rdpSaveScreen:
+[500295.575] rdpSaveScreen:
+[500895.575] rdpSaveScreen:
+[501495.577] rdpSaveScreen:
+[502095.578] rdpSaveScreen:
+[502695.579] rdpSaveScreen:
+[503295.579] rdpSaveScreen:
+[503895.580] rdpSaveScreen:
+[504495.581] rdpSaveScreen:
+[505095.582] rdpSaveScreen:
+[505695.582] rdpSaveScreen:
+[506295.582] rdpSaveScreen:
+[506895.584] rdpSaveScreen:
+[507495.585] rdpSaveScreen:
+[508095.586] rdpSaveScreen:
+[508695.588] rdpSaveScreen:
+[509295.589] rdpSaveScreen:
+[509895.590] rdpSaveScreen:
+[510495.591] rdpSaveScreen:
+[511095.592] rdpSaveScreen:
+[511695.594] rdpSaveScreen:
+[512295.595] rdpSaveScreen:
+[512895.595] rdpSaveScreen:
+[513495.596] rdpSaveScreen:
+[514095.597] rdpSaveScreen:
+[514695.598] rdpSaveScreen:
+[515295.598] rdpSaveScreen:
+[515895.599] rdpSaveScreen:
+[516495.599] rdpSaveScreen:
+[517095.600] rdpSaveScreen:
+[517695.601] rdpSaveScreen:
+[518295.601] rdpSaveScreen:
+[518895.601] rdpSaveScreen:
+[519495.603] rdpSaveScreen:
+[520095.604] rdpSaveScreen:
+[520695.604] rdpSaveScreen:
+[521295.606] rdpSaveScreen:
+[521895.607] rdpSaveScreen:
+[522495.608] rdpSaveScreen:
+[523095.608] rdpSaveScreen:
+[523695.609] rdpSaveScreen:
+[524295.609] rdpSaveScreen:
+[524895.610] rdpSaveScreen:
+[525495.611] rdpSaveScreen:
+[526095.611] rdpSaveScreen:
+[526695.611] rdpSaveScreen:
+[527295.613] rdpSaveScreen:
+[527895.614] rdpSaveScreen:
+[528495.615] rdpSaveScreen:
+[529095.616] rdpSaveScreen:
+[529695.616] rdpSaveScreen:
+[530295.616] rdpSaveScreen:
+[530895.617] rdpSaveScreen:
+[531495.618] rdpSaveScreen:
+[532095.618] rdpSaveScreen:
+[532695.619] rdpSaveScreen:
+[533295.630] rdpSaveScreen:
+[533895.630] rdpSaveScreen:
+[534495.630] rdpSaveScreen:
+[535095.630] rdpSaveScreen:
+[535695.631] rdpSaveScreen:
+[536295.632] rdpSaveScreen:
+[536895.633] rdpSaveScreen:
+[537495.633] rdpSaveScreen:
+[538095.635] rdpSaveScreen:
+[538695.635] rdpSaveScreen:
+[539295.636] rdpSaveScreen:
+[539895.636] rdpSaveScreen:
+[540495.636] rdpSaveScreen:
+[541095.638] rdpSaveScreen:
+[541695.640] rdpSaveScreen:
+[542295.641] rdpSaveScreen:
+[542895.642] rdpSaveScreen:
+[543495.643] rdpSaveScreen:
+[544095.644] rdpSaveScreen:
+[544695.646] rdpSaveScreen:
+[545295.646] rdpSaveScreen:
+[545895.647] rdpSaveScreen:
+[546495.647] rdpSaveScreen:
+[547095.648] rdpSaveScreen:
+[547695.650] rdpSaveScreen:
+[548295.650] rdpSaveScreen:
+[548895.651] rdpSaveScreen:
+[549495.651] rdpSaveScreen:
+[550095.654] rdpSaveScreen:
+[550695.654] rdpSaveScreen:
+[551295.654] rdpSaveScreen:
+[551895.654] rdpSaveScreen:
+[552495.654] rdpSaveScreen:
+[553095.656] rdpSaveScreen:
+[553695.656] rdpSaveScreen:
+[554295.657] rdpSaveScreen:
+[554895.658] rdpSaveScreen:
+[555495.659] rdpSaveScreen:
+[556095.660] rdpSaveScreen:
+[556695.661] rdpSaveScreen:
+[557295.662] rdpSaveScreen:
+[557895.663] rdpSaveScreen:
+[558495.663] rdpSaveScreen:
+[559095.664] rdpSaveScreen:
+[559695.667] rdpSaveScreen:
+[560295.668] rdpSaveScreen:
+[560895.669] rdpSaveScreen:
+[561495.670] rdpSaveScreen:
+[562095.672] rdpSaveScreen:
+[562695.674] rdpSaveScreen:
+[563295.674] rdpSaveScreen:
+[563895.675] rdpSaveScreen:
+[564495.676] rdpSaveScreen:
+[565095.678] rdpSaveScreen:
+[565695.679] rdpSaveScreen:
+[566295.680] rdpSaveScreen:
+[566895.681] rdpSaveScreen:
+[567495.682] rdpSaveScreen:
+[568095.682] rdpSaveScreen:
+[568695.684] rdpSaveScreen:
+[569295.685] rdpSaveScreen:
+[569895.686] rdpSaveScreen:
+[570495.688] rdpSaveScreen:
+[571095.689] rdpSaveScreen:
